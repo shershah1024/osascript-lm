@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+
+# Training artifacts
+checkpoints/
+*.log
+
+# Data (large files, generated)
+data/pipe_*.jsonl
+data/expanded_pairs.jsonl
+data/expanded_pairs_v2.jsonl
+data/expanded_pairs_v3.jsonl
+data/expanded_conversational.jsonl
+
+# OS
+.DS_Store

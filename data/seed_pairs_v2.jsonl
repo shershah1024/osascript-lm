@@ -1,0 +1,396 @@
+{"input": "open safari", "output": "tell application \"Safari\" to activate"}
+{"input": "launch safari", "output": "tell application \"Safari\" to activate"}
+{"input": "start safari", "output": "tell application \"Safari\" to activate"}
+{"input": "fire up safari", "output": "tell application \"Safari\" to activate"}
+{"input": "open the safari browser", "output": "tell application \"Safari\" to activate"}
+{"input": "can you open safari for me", "output": "tell application \"Safari\" to activate"}
+{"input": "quit safari", "output": "tell application \"Safari\" to quit"}
+{"input": "close safari", "output": "tell application \"Safari\" to quit"}
+{"input": "kill safari", "output": "tell application \"Safari\" to quit"}
+{"input": "exit safari", "output": "tell application \"Safari\" to quit"}
+{"input": "shut down safari", "output": "tell application \"Safari\" to quit"}
+{"input": "open finder", "output": "tell application \"Finder\" to activate"}
+{"input": "launch finder", "output": "tell application \"Finder\" to activate"}
+{"input": "show me finder", "output": "tell application \"Finder\" to activate"}
+{"input": "bring up finder", "output": "tell application \"Finder\" to activate"}
+{"input": "open notes", "output": "PASS_TO_CLOUD"}
+{"input": "launch notes app", "output": "PASS_TO_CLOUD"}
+{"input": "start up notes", "output": "PASS_TO_CLOUD"}
+{"input": "open terminal", "output": "tell application \"Terminal\" to activate"}
+{"input": "launch the terminal", "output": "tell application \"Terminal\" to activate"}
+{"input": "fire up terminal", "output": "tell application \"Terminal\" to activate"}
+{"input": "open system preferences", "output": "tell application \"System Preferences\" to activate"}
+{"input": "open system settings", "output": "tell application \"System Settings\" to activate"}
+{"input": "launch settings", "output": "tell application \"System Settings\" to activate"}
+{"input": "open slack", "output": "tell application \"Slack\" to activate"}
+{"input": "launch slack", "output": "tell application \"Slack\" to activate"}
+{"input": "open vscode", "output": "tell application \"Visual Studio Code\" to activate"}
+{"input": "launch visual studio code", "output": "tell application \"Visual Studio Code\" to activate"}
+{"input": "start vscode", "output": "tell application \"Visual Studio Code\" to activate"}
+{"input": "open spotify", "output": "tell application \"Spotify\" to activate"}
+{"input": "quit all apps", "output": "tell application \"System Events\" to set quitApps to name of every application process whose background only is false\nrepeat with appName in quitApps\n\tif appName is not \"Finder\" then\n\t\ttell application appName to quit\n\tend if\nend repeat"}
+{"input": "hide safari", "output": "tell application \"System Events\" to set visible of process \"Safari\" to false"}
+{"input": "hide the current app", "output": "tell application \"System Events\" to set visible of (first application process whose frontmost is true) to false"}
+{"input": "hide this application", "output": "tell application \"System Events\" to set visible of (first application process whose frontmost is true) to false"}
+{"input": "what apps are running", "output": "tell application \"System Events\" to get name of every application process whose background only is false"}
+{"input": "list running applications", "output": "tell application \"System Events\" to get name of every application process whose background only is false"}
+{"input": "show me all open apps", "output": "tell application \"System Events\" to get name of every application process whose background only is false"}
+{"input": "which applications are open right now", "output": "tell application \"System Events\" to get name of every application process whose background only is false"}
+{"input": "switch to safari", "output": "tell application \"Safari\" to activate"}
+{"input": "bring safari to the front", "output": "tell application \"Safari\" to activate"}
+{"input": "focus on safari", "output": "tell application \"Safari\" to activate"}
+{"input": "create a calendar event called Team Meeting on March 5th at 2pm", "output": "PASS_TO_CLOUD"}
+{"input": "add a meeting to my calendar for tomorrow at 10am called Standup", "output": "PASS_TO_CLOUD"}
+{"input": "schedule a dentist appointment on January 15 at 3:30 PM", "output": "PASS_TO_CLOUD"}
+{"input": "put a 2 hour event called Workshop on my calendar for Friday at 9am", "output": "PASS_TO_CLOUD"}
+{"input": "create an all day event called Company Holiday on December 25", "output": "PASS_TO_CLOUD"}
+{"input": "add a calendar event with location: Lunch at Cafe Roma, tomorrow noon, at 123 Main St", "output": "PASS_TO_CLOUD"}
+{"input": "what's on my calendar today", "output": "PASS_TO_CLOUD"}
+{"input": "show me my events for today", "output": "PASS_TO_CLOUD"}
+{"input": "what do I have scheduled today", "output": "PASS_TO_CLOUD"}
+{"input": "do I have any meetings today", "output": "PASS_TO_CLOUD"}
+{"input": "show me tomorrow's schedule", "output": "PASS_TO_CLOUD"}
+{"input": "delete the event called Team Meeting", "output": "PASS_TO_CLOUD"}
+{"input": "remove the dentist appointment from my calendar", "output": "PASS_TO_CLOUD"}
+{"input": "cancel my standup meeting", "output": "PASS_TO_CLOUD"}
+{"input": "remind me to buy groceries", "output": "PASS_TO_CLOUD"}
+{"input": "set a reminder to call mom", "output": "PASS_TO_CLOUD"}
+{"input": "add a reminder to pick up dry cleaning", "output": "PASS_TO_CLOUD"}
+{"input": "create a reminder to submit report by Friday", "output": "PASS_TO_CLOUD"}
+{"input": "remind me to take medicine tomorrow at 8am", "output": "PASS_TO_CLOUD"}
+{"input": "add a reminder for March 10 to renew passport", "output": "PASS_TO_CLOUD"}
+{"input": "show my reminders", "output": "PASS_TO_CLOUD"}
+{"input": "list my pending reminders", "output": "PASS_TO_CLOUD"}
+{"input": "what reminders do I have", "output": "PASS_TO_CLOUD"}
+{"input": "any pending reminders", "output": "PASS_TO_CLOUD"}
+{"input": "complete the reminder buy groceries", "output": "PASS_TO_CLOUD"}
+{"input": "mark the call mom reminder as done", "output": "PASS_TO_CLOUD"}
+{"input": "finish the reminder about dry cleaning", "output": "PASS_TO_CLOUD"}
+{"input": "check off pick up prescription", "output": "PASS_TO_CLOUD"}
+{"input": "move the file report.pdf from Desktop to Documents", "output": "tell application \"Finder\"\n\tmove file \"report.pdf\" of folder \"Desktop\" of home to folder \"Documents\" of home\nend tell"}
+{"input": "move report.pdf to the Documents folder", "output": "tell application \"Finder\"\n\tmove file \"report.pdf\" of folder \"Desktop\" of home to folder \"Documents\" of home\nend tell"}
+{"input": "copy notes.txt from Desktop to Documents", "output": "PASS_TO_CLOUD"}
+{"input": "make a copy of report.pdf on the Desktop", "output": "tell application \"Finder\"\n\tduplicate file \"report.pdf\" of folder \"Desktop\" of home to folder \"Desktop\" of home\nend tell"}
+{"input": "rename the file old_name.txt to new_name.txt on the Desktop", "output": "tell application \"Finder\"\n\tset name of file \"old_name.txt\" of folder \"Desktop\" of home to \"new_name.txt\"\nend tell"}
+{"input": "rename notes.txt to meeting_notes.txt", "output": "PASS_TO_CLOUD"}
+{"input": "create a new folder called Projects on the Desktop", "output": "tell application \"Finder\"\n\tmake new folder at folder \"Desktop\" of home with properties {name:\"Projects\"}\nend tell"}
+{"input": "make a folder named Backups in Documents", "output": "tell application \"Finder\"\n\tmake new folder at folder \"Documents\" of home with properties {name:\"Backups\"}\nend tell"}
+{"input": "create a new folder called Work on my Desktop", "output": "tell application \"Finder\"\n\tmake new folder at folder \"Desktop\" of home with properties {name:\"Work\"}\nend tell"}
+{"input": "open the Downloads folder", "output": "tell application \"Finder\"\n\topen folder \"Downloads\" of home\n\tactivate\nend tell"}
+{"input": "show me the Documents folder", "output": "tell application \"Finder\"\n\topen folder \"Documents\" of home\n\tactivate\nend tell"}
+{"input": "open my Desktop folder", "output": "tell application \"Finder\"\n\topen folder \"Desktop\" of home\n\tactivate\nend tell"}
+{"input": "go to the Applications folder", "output": "tell application \"Finder\"\n\topen folder \"Applications\" of startup disk\n\tactivate\nend tell"}
+{"input": "trash the file old_report.pdf on the Desktop", "output": "tell application \"Finder\"\n\tmove file \"old_report.pdf\" of folder \"Desktop\" of home to trash\nend tell"}
+{"input": "delete notes.txt from my Desktop", "output": "PASS_TO_CLOUD"}
+{"input": "send this file to the trash", "output": "tell application \"Finder\"\n\tmove (selection as alias list) to trash\nend tell"}
+{"input": "move selected files to trash", "output": "tell application \"Finder\"\n\tmove (selection as alias list) to trash\nend tell"}
+{"input": "empty the trash", "output": "tell application \"Finder\" to empty the trash"}
+{"input": "clean out the trash", "output": "tell application \"Finder\" to empty the trash"}
+{"input": "empty my trash can", "output": "tell application \"Finder\" to empty the trash"}
+{"input": "list files on my Desktop", "output": "tell application \"Finder\"\n\tset fileList to name of every file of folder \"Desktop\" of home\n\treturn fileList\nend tell"}
+{"input": "what files are on my desktop", "output": "tell application \"Finder\"\n\tset fileList to name of every file of folder \"Desktop\" of home\n\treturn fileList\nend tell"}
+{"input": "show me files in Downloads", "output": "tell application \"Finder\"\n\tset fileList to name of every file of folder \"Downloads\" of home\n\treturn fileList\nend tell"}
+{"input": "turn on dark mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to true\n\tend tell\nend tell"}
+{"input": "enable dark mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to true\n\tend tell\nend tell"}
+{"input": "switch to dark mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to true\n\tend tell\nend tell"}
+{"input": "make it dark", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to true\n\tend tell\nend tell"}
+{"input": "go dark", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to true\n\tend tell\nend tell"}
+{"input": "turn off dark mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to false\n\tend tell\nend tell"}
+{"input": "switch to light mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to false\n\tend tell\nend tell"}
+{"input": "enable light mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to false\n\tend tell\nend tell"}
+{"input": "make it light", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to false\n\tend tell\nend tell"}
+{"input": "toggle dark mode", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\tset dark mode to not dark mode\n\tend tell\nend tell"}
+{"input": "set the volume to 50", "output": "set volume output volume 50"}
+{"input": "set volume to 50 percent", "output": "set volume output volume 50"}
+{"input": "turn the volume to 50", "output": "set volume output volume 50"}
+{"input": "change volume to half", "output": "set volume output volume 50"}
+{"input": "set the volume to maximum", "output": "set volume output volume 100"}
+{"input": "max volume", "output": "set volume output volume 100"}
+{"input": "turn the volume all the way up", "output": "set volume output volume 100"}
+{"input": "crank up the volume", "output": "set volume output volume 100"}
+{"input": "turn the volume down to 20", "output": "set volume output volume 20"}
+{"input": "lower the volume to 20 percent", "output": "set volume output volume 20"}
+{"input": "mute the volume", "output": "set volume output muted true"}
+{"input": "mute my mac", "output": "set volume output muted true"}
+{"input": "silence the computer", "output": "set volume output muted true"}
+{"input": "mute sound", "output": "set volume output muted true"}
+{"input": "shut up", "output": "set volume output muted true"}
+{"input": "unmute", "output": "set volume output muted false"}
+{"input": "unmute the volume", "output": "set volume output muted false"}
+{"input": "turn sound back on", "output": "set volume output muted false"}
+{"input": "what's the current volume", "output": "get volume settings"}
+{"input": "get the volume level", "output": "get volume settings"}
+{"input": "how loud is my mac", "output": "get volume settings"}
+{"input": "set brightness to 75 percent", "output": "do shell script \"brightness 0.75\""}
+{"input": "turn up the brightness", "output": "do shell script \"brightness 1.0\""}
+{"input": "max brightness", "output": "do shell script \"brightness 1.0\""}
+{"input": "dim the screen", "output": "do shell script \"brightness 0.3\""}
+{"input": "turn down the brightness", "output": "do shell script \"brightness 0.3\""}
+{"input": "turn off wifi", "output": "do shell script \"networksetup -setairportpower en0 off\""}
+{"input": "disable wifi", "output": "do shell script \"networksetup -setairportpower en0 off\""}
+{"input": "disconnect wifi", "output": "do shell script \"networksetup -setairportpower en0 off\""}
+{"input": "switch off wifi", "output": "do shell script \"networksetup -setairportpower en0 off\""}
+{"input": "turn on wifi", "output": "do shell script \"networksetup -setairportpower en0 on\""}
+{"input": "enable wifi", "output": "do shell script \"networksetup -setairportpower en0 on\""}
+{"input": "connect to wifi", "output": "do shell script \"networksetup -setairportpower en0 on\""}
+{"input": "turn on bluetooth", "output": "do shell script \"blueutil --power 1\""}
+{"input": "enable bluetooth", "output": "do shell script \"blueutil --power 1\""}
+{"input": "turn off bluetooth", "output": "do shell script \"blueutil --power 0\""}
+{"input": "disable bluetooth", "output": "do shell script \"blueutil --power 0\""}
+{"input": "put the computer to sleep", "output": "tell application \"System Events\" to sleep"}
+{"input": "sleep the mac", "output": "tell application \"System Events\" to sleep"}
+{"input": "go to sleep", "output": "tell application \"System Events\" to sleep"}
+{"input": "put my mac to sleep", "output": "tell application \"System Events\" to sleep"}
+{"input": "nap time", "output": "tell application \"System Events\" to sleep"}
+{"input": "restart the computer", "output": "tell application \"System Events\" to restart"}
+{"input": "reboot my mac", "output": "tell application \"System Events\" to restart"}
+{"input": "restart this mac", "output": "tell application \"System Events\" to restart"}
+{"input": "shut down the computer", "output": "tell application \"System Events\" to shut down"}
+{"input": "power off", "output": "tell application \"System Events\" to shut down"}
+{"input": "shut down my mac", "output": "tell application \"System Events\" to shut down"}
+{"input": "turn off my computer", "output": "tell application \"System Events\" to shut down"}
+{"input": "take a screenshot", "output": "do shell script \"screencapture -i ~/Desktop/screenshot_\" & (do shell script \"date +%Y%m%d_%H%M%S\") & \".png\""}
+{"input": "capture my screen", "output": "do shell script \"screencapture ~/Desktop/screenshot_$(date +%Y%m%d_%H%M%S).png\""}
+{"input": "take a screenshot of the full screen", "output": "do shell script \"screencapture ~/Desktop/screenshot_$(date +%Y%m%d_%H%M%S).png\""}
+{"input": "screenshot the whole screen", "output": "do shell script \"screencapture ~/Desktop/screenshot_$(date +%Y%m%d_%H%M%S).png\""}
+{"input": "take a screenshot and save to desktop", "output": "do shell script \"screencapture ~/Desktop/screenshot_$(date +%Y%m%d_%H%M%S).png\""}
+{"input": "lock the screen", "output": "tell application \"System Events\" to keystroke \"q\" using {command down, control down}"}
+{"input": "lock my mac", "output": "tell application \"System Events\" to keystroke \"q\" using {command down, control down}"}
+{"input": "lock screen", "output": "tell application \"System Events\" to keystroke \"q\" using {command down, control down}"}
+{"input": "send a message to John saying Hey, are you free tonight?", "output": "PASS_TO_CLOUD"}
+{"input": "text Mom saying I'll be home for dinner", "output": "PASS_TO_CLOUD"}
+{"input": "iMessage Sarah: Running 10 minutes late", "output": "PASS_TO_CLOUD"}
+{"input": "send an iMessage to +15551234567 saying See you soon", "output": "PASS_TO_CLOUD"}
+{"input": "message Dave that the meeting is cancelled", "output": "PASS_TO_CLOUD"}
+{"input": "read my latest messages", "output": "PASS_TO_CLOUD"}
+{"input": "show my recent messages", "output": "PASS_TO_CLOUD"}
+{"input": "compose an email to john@example.com about Project Update", "output": "PASS_TO_CLOUD"}
+{"input": "send an email to boss@company.com with subject Quarterly Report", "output": "PASS_TO_CLOUD"}
+{"input": "draft an email to team@company.com saying Please review the attached document", "output": "PASS_TO_CLOUD"}
+{"input": "write an email to alice@example.com with subject Meeting Tomorrow and body Can we meet at 3pm?", "output": "PASS_TO_CLOUD"}
+{"input": "email sarah@example.com about lunch plans", "output": "PASS_TO_CLOUD"}
+{"input": "check my email", "output": "PASS_TO_CLOUD"}
+{"input": "check for new mail", "output": "PASS_TO_CLOUD"}
+{"input": "refresh my inbox", "output": "PASS_TO_CLOUD"}
+{"input": "any new emails", "output": "PASS_TO_CLOUD"}
+{"input": "how many unread emails do I have", "output": "PASS_TO_CLOUD"}
+{"input": "show my recent emails", "output": "PASS_TO_CLOUD"}
+{"input": "play music", "output": "tell application \"Music\" to play"}
+{"input": "play some music", "output": "tell application \"Music\" to play"}
+{"input": "start playing music", "output": "tell application \"Music\" to play"}
+{"input": "hit play on music", "output": "tell application \"Music\" to play"}
+{"input": "resume music", "output": "tell application \"Music\" to play"}
+{"input": "unpause the music", "output": "tell application \"Music\" to play"}
+{"input": "pause music", "output": "tell application \"Music\" to pause"}
+{"input": "pause the music", "output": "tell application \"Music\" to pause"}
+{"input": "stop the music", "output": "tell application \"Music\" to pause"}
+{"input": "hold the music", "output": "tell application \"Music\" to pause"}
+{"input": "skip this song", "output": "tell application \"Music\" to next track"}
+{"input": "next song", "output": "tell application \"Music\" to next track"}
+{"input": "play the next track", "output": "tell application \"Music\" to next track"}
+{"input": "skip track", "output": "tell application \"Music\" to next track"}
+{"input": "next track please", "output": "tell application \"Music\" to next track"}
+{"input": "go back a song", "output": "tell application \"Music\" to previous track"}
+{"input": "previous song", "output": "tell application \"Music\" to previous track"}
+{"input": "play the previous track", "output": "tell application \"Music\" to previous track"}
+{"input": "go back to the last song", "output": "tell application \"Music\" to previous track"}
+{"input": "what song is playing", "output": "tell application \"Music\"\n\tset trackName to name of current track\n\tset artistName to artist of current track\n\tset albumName to album of current track\n\treturn trackName & \" by \" & artistName & \" from \" & albumName\nend tell"}
+{"input": "what's currently playing", "output": "tell application \"Music\"\n\tset trackName to name of current track\n\tset artistName to artist of current track\n\tset albumName to album of current track\n\treturn trackName & \" by \" & artistName & \" from \" & albumName\nend tell"}
+{"input": "now playing", "output": "tell application \"Music\"\n\tset trackName to name of current track\n\tset artistName to artist of current track\n\tset albumName to album of current track\n\treturn trackName & \" by \" & artistName & \" from \" & albumName\nend tell"}
+{"input": "what's this song", "output": "tell application \"Music\"\n\tset trackName to name of current track\n\tset artistName to artist of current track\n\treturn trackName & \" by \" & artistName\nend tell"}
+{"input": "set the music volume to 70", "output": "tell application \"Music\" to set sound volume to 70"}
+{"input": "turn up the music volume", "output": "tell application \"Music\" to set sound volume to 80"}
+{"input": "turn down the music", "output": "tell application \"Music\" to set sound volume to 30"}
+{"input": "play the playlist Chill Vibes", "output": "tell application \"Music\"\n\tplay playlist \"Chill Vibes\"\nend tell"}
+{"input": "play my favorites playlist", "output": "tell application \"Music\"\n\tplay playlist \"Favorites\"\nend tell"}
+{"input": "shuffle my library", "output": "tell application \"Music\"\n\tset shuffle enabled to true\n\tplay\nend tell"}
+{"input": "play on spotify", "output": "tell application \"Spotify\" to play"}
+{"input": "pause spotify", "output": "tell application \"Spotify\" to pause"}
+{"input": "next track on spotify", "output": "tell application \"Spotify\" to next track"}
+{"input": "skip song on spotify", "output": "tell application \"Spotify\" to next track"}
+{"input": "previous track on spotify", "output": "tell application \"Spotify\" to previous track"}
+{"input": "what's playing on spotify", "output": "tell application \"Spotify\"\n\tset trackName to name of current track\n\tset artistName to artist of current track\n\tset albumName to album of current track\n\treturn trackName & \" by \" & artistName & \" from \" & albumName\nend tell"}
+{"input": "open google.com", "output": "open location \"https://google.com\""}
+{"input": "go to google.com", "output": "open location \"https://google.com\""}
+{"input": "open the website google.com", "output": "open location \"https://google.com\""}
+{"input": "navigate to github.com", "output": "open location \"https://github.com\""}
+{"input": "browse to youtube.com", "output": "open location \"https://youtube.com\""}
+{"input": "open https://apple.com in safari", "output": "tell application \"Safari\"\n\tactivate\n\topen location \"https://apple.com\"\nend tell"}
+{"input": "open a new tab in safari", "output": "tell application \"Safari\"\n\tactivate\n\ttell window 1\n\t\tset current tab to (make new tab with properties {URL:\"about:blank\"})\n\tend tell\nend tell"}
+{"input": "new tab in safari", "output": "tell application \"Safari\"\n\tactivate\n\ttell window 1\n\t\tset current tab to (make new tab with properties {URL:\"about:blank\"})\n\tend tell\nend tell"}
+{"input": "open a new safari tab", "output": "tell application \"Safari\"\n\tactivate\n\ttell window 1\n\t\tset current tab to (make new tab with properties {URL:\"about:blank\"})\n\tend tell\nend tell"}
+{"input": "open google in a new tab", "output": "tell application \"Safari\"\n\tactivate\n\ttell window 1\n\t\tset current tab to (make new tab with properties {URL:\"https://google.com\"})\n\tend tell\nend tell"}
+{"input": "close the current tab in safari", "output": "tell application \"Safari\"\n\ttell window 1\n\t\tclose current tab\n\tend tell\nend tell"}
+{"input": "close this safari tab", "output": "tell application \"Safari\"\n\ttell window 1\n\t\tclose current tab\n\tend tell\nend tell"}
+{"input": "close the safari tab", "output": "tell application \"Safari\"\n\ttell window 1\n\t\tclose current tab\n\tend tell\nend tell"}
+{"input": "what's the url of the current safari tab", "output": "tell application \"Safari\" to return URL of current tab of window 1"}
+{"input": "get the current safari url", "output": "tell application \"Safari\" to return URL of current tab of window 1"}
+{"input": "what page am I on in safari", "output": "tell application \"Safari\"\n\treturn {URL of current tab of window 1, name of current tab of window 1}\nend tell"}
+{"input": "create a new note called Shopping List", "output": "PASS_TO_CLOUD"}
+{"input": "make a note titled Meeting Notes", "output": "PASS_TO_CLOUD"}
+{"input": "add a note called Ideas", "output": "PASS_TO_CLOUD"}
+{"input": "create a new note with the text Remember to call the plumber", "output": "PASS_TO_CLOUD"}
+{"input": "write a note saying Pick up laundry tomorrow", "output": "PASS_TO_CLOUD"}
+{"input": "search my notes for recipe", "output": "PASS_TO_CLOUD"}
+{"input": "find notes about project", "output": "PASS_TO_CLOUD"}
+{"input": "search notes for meeting", "output": "PASS_TO_CLOUD"}
+{"input": "show a notification saying Task Complete", "output": "display notification \"Task Complete\" with title \"Notification\""}
+{"input": "display a notification that says Backup Finished", "output": "display notification \"Backup Finished\" with title \"Notification\""}
+{"input": "send me a notification saying Download Done", "output": "display notification \"Download Done\" with title \"Notification\""}
+{"input": "notify me with the message Time to take a break", "output": "PASS_TO_CLOUD"}
+{"input": "pop up an alert saying Meeting in 5 minutes", "output": "PASS_TO_CLOUD"}
+{"input": "show a notification with title Reminder and message Call dentist", "output": "PASS_TO_CLOUD"}
+{"input": "alert me that the timer is done", "output": "display notification \"Timer is done\" with title \"Timer\" sound name \"default\""}
+{"input": "display a dialog saying Are you sure?", "output": "display dialog \"Are you sure?\" buttons {\"Cancel\", \"OK\"} default button \"OK\""}
+{"input": "show an alert box with the message Save your work", "output": "PASS_TO_CLOUD"}
+{"input": "get the clipboard contents", "output": "get the clipboard"}
+{"input": "what's on my clipboard", "output": "get the clipboard"}
+{"input": "show clipboard", "output": "get the clipboard"}
+{"input": "read the clipboard", "output": "get the clipboard"}
+{"input": "paste from clipboard", "output": "get the clipboard"}
+{"input": "what did I copy", "output": "get the clipboard"}
+{"input": "copy hello world to the clipboard", "output": "set the clipboard to \"hello world\""}
+{"input": "set clipboard to this is a test", "output": "set the clipboard to \"this is a test\""}
+{"input": "put the text meeting at 3pm on the clipboard", "output": "PASS_TO_CLOUD"}
+{"input": "copy this text to clipboard: Remember to buy milk", "output": "PASS_TO_CLOUD"}
+{"input": "clear the clipboard", "output": "set the clipboard to \"\""}
+{"input": "what time is it", "output": "return time string of (current date)"}
+{"input": "tell me the time", "output": "return time string of (current date)"}
+{"input": "what's the current time", "output": "return time string of (current date)"}
+{"input": "what's today's date", "output": "return date string of (current date)"}
+{"input": "tell me today's date", "output": "return date string of (current date)"}
+{"input": "what day is it", "output": "return date string of (current date)"}
+{"input": "what's my computer name", "output": "return computer name of (system info)"}
+{"input": "get the hostname", "output": "do shell script \"hostname\""}
+{"input": "who am I logged in as", "output": "do shell script \"whoami\""}
+{"input": "what's my username", "output": "return short user name of (system info)"}
+{"input": "check battery level", "output": "do shell script \"pmset -g batt | grep -o '[0-9]*%'\""}
+{"input": "how much battery do I have", "output": "do shell script \"pmset -g batt | grep -o '[0-9]*%'\""}
+{"input": "what's my battery at", "output": "do shell script \"pmset -g batt | grep -o '[0-9]*%'\""}
+{"input": "battery status", "output": "do shell script \"pmset -g batt | grep -o '[0-9]*%'\""}
+{"input": "what wifi network am I on", "output": "do shell script \"networksetup -getairportnetwork en0 | awk -F': ' '{print $2}'\""}
+{"input": "which wifi am I connected to", "output": "do shell script \"networksetup -getairportnetwork en0 | awk -F': ' '{print $2}'\""}
+{"input": "show wifi name", "output": "do shell script \"networksetup -getairportnetwork en0 | awk -F': ' '{print $2}'\""}
+{"input": "what's my ip address", "output": "do shell script \"ipconfig getifaddr en0\""}
+{"input": "get my ip address", "output": "do shell script \"ipconfig getifaddr en0\""}
+{"input": "show my local ip", "output": "do shell script \"ipconfig getifaddr en0\""}
+{"input": "what's my public ip", "output": "do shell script \"curl -s ifconfig.me\""}
+{"input": "get my external ip", "output": "do shell script \"curl -s ifconfig.me\""}
+{"input": "how much disk space do I have", "output": "do shell script \"df -h / | tail -1 | awk '{print $4}' | xargs echo 'Available:'\""}
+{"input": "check free disk space", "output": "do shell script \"df -h / | tail -1 | awk '{print $4}' | xargs echo 'Available:'\""}
+{"input": "how much storage is left", "output": "do shell script \"df -h / | tail -1 | awk '{print $4}' | xargs echo 'Available:'\""}
+{"input": "open new finder window", "output": "tell application \"Finder\"\n\tmake new Finder window\n\tactivate\nend tell"}
+{"input": "open a new finder window at home", "output": "tell application \"Finder\"\n\tmake new Finder window to home\n\tactivate\nend tell"}
+{"input": "show the desktop", "output": "tell application \"Finder\"\n\tset visible of every process of application \"System Events\" whose visible is true to false\nend tell"}
+{"input": "minimize all windows", "output": "tell application \"System Events\"\n\tset visible of every process whose visible is true to false\nend tell"}
+{"input": "set a timer for 5 minutes", "output": "delay 300\ndisplay notification \"Timer: 5 minutes is up!\" with title \"Timer\" sound name \"default\""}
+{"input": "set a 10 minute timer", "output": "delay 600\ndisplay notification \"Timer: 10 minutes is up!\" with title \"Timer\" sound name \"default\""}
+{"input": "timer for 15 minutes", "output": "delay 900\ndisplay notification \"Timer: 15 minutes is up!\" with title \"Timer\" sound name \"default\""}
+{"input": "remind me in 30 minutes", "output": "PASS_TO_CLOUD"}
+{"input": "set an alarm for 2 minutes", "output": "delay 120\ndisplay notification \"Timer: 2 minutes is up!\" with title \"Alarm\" sound name \"default\""}
+{"input": "eject all external drives", "output": "tell application \"Finder\" to eject (every disk whose ejectable is true)"}
+{"input": "eject the usb drive", "output": "tell application \"Finder\" to eject (every disk whose ejectable is true)"}
+{"input": "safely eject disks", "output": "tell application \"Finder\" to eject (every disk whose ejectable is true)"}
+{"input": "say hello out loud", "output": "say \"hello\""}
+{"input": "say good morning", "output": "say \"good morning\""}
+{"input": "speak the text Welcome to the presentation", "output": "PASS_TO_CLOUD"}
+{"input": "read this aloud: The quick brown fox", "output": "say \"The quick brown fox\""}
+{"input": "say hello using the Alex voice", "output": "say \"hello\" using \"Alex\""}
+{"input": "create an event called Lunch with Sarah on March 10 at noon for 90 minutes", "output": "PASS_TO_CLOUD"}
+{"input": "add a 30 minute event called Quick Sync tomorrow at 4pm", "output": "PASS_TO_CLOUD"}
+{"input": "is dark mode on", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\treturn dark mode\n\tend tell\nend tell"}
+{"input": "check if dark mode is enabled", "output": "tell application \"System Events\"\n\ttell appearance preferences\n\t\treturn dark mode\n\tend tell\nend tell"}
+{"input": "list all my calendars", "output": "PASS_TO_CLOUD"}
+{"input": "show my calendars", "output": "PASS_TO_CLOUD"}
+{"input": "get the title of the current safari page", "output": "tell application \"Safari\" to return name of current tab of window 1"}
+{"input": "what's the title of this webpage", "output": "tell application \"Safari\" to return name of current tab of window 1"}
+{"input": "count my open safari tabs", "output": "tell application \"Safari\" to return count of tabs of window 1"}
+{"input": "how many tabs do I have open", "output": "tell application \"Safari\" to return count of tabs of window 1"}
+{"input": "close all safari windows", "output": "tell application \"Safari\" to close every window"}
+{"input": "close all safari tabs except current", "output": "tell application \"Safari\"\n\ttell window 1\n\t\tset currentIdx to index of current tab\n\t\trepeat with i from (count of tabs) to 1 by -1\n\t\t\tif i is not currentIdx then close tab i\n\t\tend repeat\n\tend tell\nend tell"}
+{"input": "get the size of the file report.pdf on my Desktop", "output": "tell application \"Finder\"\n\tset fileSize to size of file \"report.pdf\" of folder \"Desktop\" of home\n\treturn fileSize\nend tell"}
+{"input": "how big is the Downloads folder", "output": "do shell script \"du -sh ~/Downloads | awk '{print $1}'\""}
+{"input": "show hidden files in Finder", "output": "do shell script \"defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder\""}
+{"input": "hide hidden files in Finder", "output": "do shell script \"defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder\""}
+{"input": "toggle hidden files", "output": "do shell script \"defaults write com.apple.finder AppleShowAllFiles -bool \\\"$(defaults read com.apple.finder AppleShowAllFiles | grep -q 'true' && echo false || echo true)\\\" && killall Finder\""}
+{"input": "open the home folder", "output": "tell application \"Finder\"\n\topen home\n\tactivate\nend tell"}
+{"input": "set my reminder list to show all items", "output": "PASS_TO_CLOUD"}
+{"input": "delete all completed reminders", "output": "PASS_TO_CLOUD"}
+{"input": "open preview", "output": "tell application \"Preview\" to activate"}
+{"input": "launch photo booth", "output": "tell application \"Photo Booth\" to activate"}
+{"input": "open facetime", "output": "tell application \"FaceTime\" to activate"}
+{"input": "open maps", "output": "tell application \"Maps\" to activate"}
+{"input": "launch calculator", "output": "tell application \"Calculator\" to activate"}
+{"input": "open the calculator", "output": "tell application \"Calculator\" to activate"}
+{"input": "open activity monitor", "output": "tell application \"Activity Monitor\" to activate"}
+{"input": "show activity monitor", "output": "tell application \"Activity Monitor\" to activate"}
+{"input": "open disk utility", "output": "tell application \"Disk Utility\" to activate"}
+{"input": "open keynote", "output": "tell application \"Keynote\" to activate"}
+{"input": "launch pages", "output": "tell application \"Pages\" to activate"}
+{"input": "open numbers", "output": "tell application \"Numbers\" to activate"}
+{"input": "open the app store", "output": "tell application \"App Store\" to activate"}
+{"input": "launch xcode", "output": "tell application \"Xcode\" to activate"}
+{"input": "quit finder", "output": "tell application \"Finder\" to quit"}
+{"input": "force quit safari", "output": "do shell script \"killall Safari\""}
+{"input": "force close the current app", "output": "tell application \"System Events\"\n\tset frontApp to name of first application process whose frontmost is true\nend tell\ndo shell script \"killall \" & quoted form of frontApp"}
+{"input": "kill all chrome processes", "output": "do shell script \"killall 'Google Chrome'\""}
+{"input": "increase volume by 10", "output": "set currentVol to output volume of (get volume settings)\nset volume output volume (currentVol + 10)"}
+{"input": "decrease volume by 10", "output": "set currentVol to output volume of (get volume settings)\nset volume output volume (currentVol - 10)"}
+{"input": "turn the volume up a little", "output": "set currentVol to output volume of (get volume settings)\nset volume output volume (currentVol + 10)"}
+{"input": "turn the volume down a bit", "output": "set currentVol to output volume of (get volume settings)\nset volume output volume (currentVol - 10)"}
+{"input": "make a zip of the Desktop folder", "output": "do shell script \"cd ~ && zip -r ~/Desktop/Desktop_backup.zip Desktop/\""}
+{"input": "compress the Documents folder", "output": "do shell script \"cd ~ && zip -r ~/Desktop/Documents_backup.zip Documents/\""}
+{"input": "open the file report.pdf on my desktop", "output": "tell application \"Finder\"\n\topen file \"report.pdf\" of folder \"Desktop\" of home\nend tell"}
+{"input": "open notes.txt from Documents", "output": "PASS_TO_CLOUD"}
+{"input": "create a text file called todo.txt on my Desktop with content Buy groceries", "output": "PASS_TO_CLOUD"}
+{"input": "make a new text file on the Desktop called notes.txt", "output": "PASS_TO_CLOUD"}
+{"input": "open google.com in a new safari window", "output": "tell application \"Safari\"\n\tmake new document with properties {URL:\"https://google.com\"}\n\tactivate\nend tell"}
+{"input": "search google for apple news", "output": "open location \"https://www.google.com/search?q=apple+news\""}
+{"input": "google the weather forecast", "output": "open location \"https://www.google.com/search?q=weather+forecast\""}
+{"input": "search youtube for coding tutorials", "output": "open location \"https://www.youtube.com/results?search_query=coding+tutorials\""}
+{"input": "open twitter", "output": "open location \"https://twitter.com\""}
+{"input": "go to reddit", "output": "open location \"https://reddit.com\""}
+{"input": "send an email to bob@example.com with cc to alice@example.com about Project Status", "output": "PASS_TO_CLOUD"}
+{"input": "search my emails for invoice", "output": "PASS_TO_CLOUD"}
+{"input": "find emails from john@example.com", "output": "PASS_TO_CLOUD"}
+{"input": "list my note titles", "output": "PASS_TO_CLOUD"}
+{"input": "show all my notes", "output": "PASS_TO_CLOUD"}
+{"input": "how many notes do I have", "output": "PASS_TO_CLOUD"}
+{"input": "count my reminders", "output": "PASS_TO_CLOUD"}
+{"input": "how many pending reminders do I have", "output": "PASS_TO_CLOUD"}
+{"input": "connect to the wifi network MyNetwork", "output": "do shell script \"networksetup -setairportnetwork en0 MyNetwork\""}
+{"input": "join wifi network CoffeeShop with password abc123", "output": "do shell script \"networksetup -setairportnetwork en0 CoffeeShop abc123\""}
+{"input": "what's my mac model", "output": "do shell script \"sysctl -n hw.model\""}
+{"input": "how much RAM does my mac have", "output": "do shell script \"sysctl -n hw.memsize | awk '{print $0/1073741824 \\\" GB\\\"}'\""}
+{"input": "what macOS version am I running", "output": "do shell script \"sw_vers -productVersion\""}
+{"input": "check my macos version", "output": "do shell script \"sw_vers -productVersion\""}
+{"input": "what processor does my mac have", "output": "do shell script \"sysctl -n machdep.cpu.brand_string\""}
+{"input": "uptime of my mac", "output": "do shell script \"uptime\""}
+{"input": "how long has my mac been on", "output": "do shell script \"uptime\""}
+{"input": "open the trash", "output": "tell application \"Finder\"\n\topen trash\n\tactivate\nend tell"}
+{"input": "show me the trash", "output": "tell application \"Finder\"\n\topen trash\n\tactivate\nend tell"}
+{"input": "open the recycle bin", "output": "tell application \"Finder\"\n\topen trash\n\tactivate\nend tell"}
+{"input": "take a screenshot of just a window", "output": "do shell script \"screencapture -w ~/Desktop/window_screenshot_$(date +%Y%m%d_%H%M%S).png\""}
+{"input": "screenshot to clipboard", "output": "do shell script \"screencapture -c\""}
+{"input": "take a screenshot and copy it to clipboard", "output": "do shell script \"screencapture -c\""}
+{"input": "start screen recording", "output": "do shell script \"screencapture -v ~/Desktop/screen_recording_$(date +%Y%m%d_%H%M%S).mov &\""}
+{"input": "open a specific file at /Users/me/Documents/report.pdf", "output": "tell application \"Finder\"\n\topen POSIX file \"/Users/me/Documents/report.pdf\"\nend tell"}
+{"input": "reveal the file report.pdf in Finder", "output": "tell application \"Finder\"\n\treveal file \"report.pdf\" of folder \"Desktop\" of home\n\tactivate\nend tell"}
+{"input": "get info about the file on my Desktop called photo.jpg", "output": "tell application \"Finder\"\n\tset fileInfo to properties of file \"photo.jpg\" of folder \"Desktop\" of home\n\treturn fileInfo\nend tell"}
+{"input": "change the desktop wallpaper to /Users/me/Pictures/wallpaper.jpg", "output": "tell application \"System Events\"\n\ttell every desktop\n\t\tset picture to \"/Users/me/Pictures/wallpaper.jpg\"\n\tend tell\nend tell"}
+{"input": "set the wallpaper", "output": "tell application \"System Events\"\n\ttell every desktop\n\t\tset picture to POSIX path of (choose file with prompt \"Choose a wallpaper image\")\n\tend tell\nend tell"}
+{"input": "do not disturb on", "output": "do shell script \"defaults -currentHost write ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb -boolean true && killall NotificationCenter\""}
+{"input": "enable do not disturb", "output": "do shell script \"defaults -currentHost write ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb -boolean true && killall NotificationCenter\""}
+{"input": "turn off do not disturb", "output": "do shell script \"defaults -currentHost write ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb -boolean false && killall NotificationCenter\""}
+{"input": "show me the desktop path", "output": "return POSIX path of (path to desktop)"}
+{"input": "what's my home directory", "output": "return POSIX path of (path to home folder)"}
+{"input": "get the path to my documents folder", "output": "return POSIX path of (path to documents folder)"}
+{"input": "move all pdf files from Desktop to Documents", "output": "tell application \"Finder\"\n\tmove (every file of folder \"Desktop\" of home whose name extension is \"pdf\") to folder \"Documents\" of home\nend tell"}
+{"input": "copy all images from Desktop to Pictures", "output": "tell application \"Finder\"\n\tmove (every file of folder \"Desktop\" of home whose name extension is in {\"jpg\", \"jpeg\", \"png\", \"gif\"}) to folder \"Pictures\" of home\nend tell"}
+{"input": "how many files are on my Desktop", "output": "tell application \"Finder\"\n\treturn count of files of folder \"Desktop\" of home\nend tell"}
+{"input": "count files in Downloads", "output": "tell application \"Finder\"\n\treturn count of files of folder \"Downloads\" of home\nend tell"}
+{"input": "sort Desktop files by date", "output": "tell application \"Finder\"\n\tset fileList to every file of folder \"Desktop\" of home\n\tset output to \"\"\n\trepeat with f in fileList\n\t\tset output to output & name of f & \" - \" & modification date of f & return\n\tend repeat\n\treturn output\nend tell"}
+{"input": "open mission control", "output": "do shell script \"open -a 'Mission Control'\""}
+{"input": "show mission control", "output": "do shell script \"open -a 'Mission Control'\""}
+{"input": "open launchpad", "output": "do shell script \"open -a Launchpad\""}
+{"input": "show launchpad", "output": "do shell script \"open -a Launchpad\""}
