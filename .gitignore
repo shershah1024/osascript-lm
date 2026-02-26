@@ -21,3 +21,4 @@ data/expanded_conversational.jsonl
 
 # OS
 .DS_Store
+model/weights.safetensors
